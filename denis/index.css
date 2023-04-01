@@ -1,0 +1,624 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Regular.eot');
+    src: local('./fonts/Gilroy Regular'), local('./fonts/Gilroy-Regular'),
+        url('./fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('./fonts/Gilroy-Regular.woff') format('woff'),
+        url('./fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Bold.eot');
+    src: local('./fonts/Gilroy Bold'), local('./fonts/Gilroy-Bold'),
+        url('./fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('./fonts/Gilroy-Bold.woff') format('woff'),
+        url('./fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Medium.eot');
+    src: local('./fonts/Gilroy Medium'), local('Gilroy-Medium'),
+        url('./fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('./fonts/Gilroy-Medium.woff') format('woff'),
+        url('./fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-MediumItalic.eot');
+    src: local('./fonts/Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
+        url('./fonts/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-MediumItalic.woff2') format('woff2'),
+        url('./fonts/Gilroy-MediumItalic.woff') format('woff'),
+        url('./fonts/Gilroy-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-RegularItalic.eot');
+    src: local('./fonts/Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
+        url('./fonts/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-RegularItalic.woff2') format('woff2'),
+        url('./fonts/Gilroy-RegularItalic.woff') format('woff'),
+        url('./fonts/Gilroy-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-BoldItalic.eot');
+    src: local('./fonts/Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
+        url('./fonts/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+        url('./fonts/Gilroy-BoldItalic.woff') format('woff'),
+        url('./fonts/Gilroy-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #070707;
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+.container{
+    width: 993px;
+    margin: 0 auto;
+}
+
+.header-container{
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+}
+
+.header{
+    padding: 32px 0 0 0;
+  
+}
+
+.hero{
+    padding: 39px 0 104px 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__link{
+    color: #828282;
+    font-weight: 700;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.navbar__link:hover{
+    color: #070707;
+    transition: .5s;
+}
+
+.header__language-block-hidden{
+    display: none;
+}
+
+.hero__title{
+    font-weight: 700;
+    font-size: 47px;
+}
+
+.hero-top{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hero__text, .hero__language-block{
+    align-self: flex-end;
+
+}
+
+.hero__text{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.hero__language-block{
+    transform: rotate(-90deg);
+    margin-bottom: 25px;
+}
+
+.hero__language--text{
+    font-size: 16px;
+    font-weight: 700;
+    color: #828282;
+    text-transform: uppercase;
+}
+
+.hero__language--text-active{
+    color: #070707;
+}
+
+.hero-bot{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.hero-img{
+    width: 100%;
+    height: 100%;
+}
+
+.about{
+    padding: 120px 0 107px 0;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.title{
+    font-size: 34px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.text{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills{
+    padding: 91px 0 109px 0;
+    text-align: center;
+}
+
+.skills-title{
+    margin-bottom: 70px;
+}
+
+.skills-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 89px;
+}
+
+.skills-item{
+    width: 166px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills-item__img{
+    width: 89px;
+    height: 89px;
+    margin: 0 auto;
+}
+
+.skills-item__text{
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+    margin-top: 10px;
+}
+
+.star-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: flex-end;
+
+}
+
+.star-box__star{
+    
+    width: 26px;
+    height: 26px;
+}
+
+.star-box__star-active{
+    fill: #070707;
+}
+
+.portfolio{
+    background: #F6F6F6;
+    padding: 112px 0 5px 0;
+}
+
+.portfoilo-img{
+    width: 100%;
+}
+
+.portfolio-text{
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 45px;
+    cursor: pointer;
+    margin-bottom: 99px;
+}
+
+.contacts{
+    padding: 114px 0 123px 0;
+}
+
+.contacts-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacts-btn{
+    display: block;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #070707;
+    border-radius: 33px;
+    padding: 13px 29px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.social-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+
+
+
+.contact__subtext{
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 14px;
+    color: #828282;
+}
+
+.burger-block{
+    width: 33px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    right: 28px;
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    transition: .4s;
+}
+
+.line{
+    height: 4px;
+    width: 100%;
+    background-color: #000;
+    transition: .5s;
+}
+
+.hero-tt{
+    display: flex;
+}
+
+.header__language-block{
+    display: none;
+}
+
+.hidden-burger{
+    display: none;
+}
+
+
+
+
+
+.line-1-special{
+    background-color: #828282;
+    transform: rotate(-45deg);
+    position: absolute;
+    transition: .5s;
+}
+
+.line-2-special{
+    background-color: #828282;
+    transform: rotate(45deg);
+    position: absolute;
+    transition: .5s;
+}
+.line-3-special{
+    background-color: #828282;
+    transform: rotate(45deg);
+    position: absolute;
+    transition: .5s;
+}
+
+
+
+
+.line-close{
+    background: #828282;
+    width: 100%;
+    height: 4px;
+   
+    position: absolute;
+}
+
+.burger-close{
+    position: fixed;
+    transition: .4s;
+}   
+
+@media (max-width: 1050px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px){
+    .skills-item{
+        min-height: 150px;
+    }
+    .container{
+        width: 550px;
+    }
+    .navbar__link{
+        font-size: 16px;
+    }
+    .hero__title{
+        font-size: 30px;
+    }
+    .hero__text{
+        font-size: 14px;
+    }
+    .hero__language--text{
+        font-size: 14px;
+    }
+    .hero__language-block{
+        margin-bottom: 18px;
+    }
+    .about, .skills, .portfolio, .contacts{
+        padding: 40px 0;
+    }
+    .title{
+        font-size: 22px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .skills-title{
+        margin-bottom: 25px;
+    }
+    .skills-box{
+        margin-top: 45px;
+    }
+    .skills-item__img{
+        width: 60px;
+        height: 60px;
+    }
+    .skills-item__text{
+        font-size: 14px;
+    }
+    .star-box__star, .star-box__star-active{
+        width: 26px;
+        height: 26px;
+    }
+    .skills-box{
+        flex-wrap: wrap;
+    }
+    .skills-item{
+        width: 40%;
+    }
+    .skills-item:nth-child(3),  .skills-item:nth-child(4){
+        margin-top: 50px;
+    }
+    .portfolio-text{
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 565px){
+    .container{
+        width: 95%;
+    }
+    .header{
+        display: none;
+    }
+    .hero__language-block{
+        display: none;
+    }
+    .hidden-burger{
+        display: flex;
+    }
+    .burger-block{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .hero-top{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-tt{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .hero__title{
+        font-size: 47px;
+    }
+    .hero__text{
+        margin-top: 23px;
+        align-self: flex-start;
+        margin-bottom: 35px;
+    }
+    .hero-bot{
+        min-height: 478px;
+        position: relative;
+        z-index: 3;
+        margin-top: 0;
+    }
+    .hero-bot::before{
+        content: '';
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 478px;
+        background-image: url(./img/111.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+        
+
+    }
+    .hero-img{
+        display: none;
+    }
+    .about{
+        padding: 86px 0 76px 0;
+
+    }
+    .title{
+        font-size: 34px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .about, .header, .skills, .portfolio, .contacts{
+        padding: 80px 30px;   
+    }
+
+    .skills-item{
+        width: 165px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    .skills-item-1{
+        margin-top: 0;
+    }
+    .skills-item__img{
+        width: 80px;
+        height: 80px;
+    }
+    .star-box{
+        margin-top: 40px;
+    }
+    .portfolio-title{
+        margin-bottom: 64px;
+    }
+    .portfolio-text{
+        margin-bottom: 80px;
+    }
+    .portfolio{
+        padding-bottom: 0;
+    }
+    .contacts-btn{
+        width: 100%;
+        padding: 9px 0;
+        
+    }
+    .burger-block{
+        z-index: 15;
+    }
+
+    .social-container{
+        width: 100%;
+        margin-top: 48px;
+    }
+    .header{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 5;
+        scroll-behavior: unset;
+    }
+    .header-container{
+        border: none;
+        position: relative;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__link{
+        font-family: 'Gilroy';
+        font-weight: 700;
+        text-align: left;
+        font-size: 34px;
+        margin-top: 56px;
+    }
+    .navbar__link:first-child{
+        margin-top: 0;
+    }
+    .header{
+        padding: 39px 26px 57px 26px;
+        left: -2360px;
+        transition: .5s;
+    }
+    .header-active{
+        left: 0;
+        transition: .5s;
+        position: fixed;
+        overflow: hidden;
+    }
+    .burger-close{
+        position: relative;
+      
+    }
+    .header__language-block-hidden{
+        display: block;
+        position: absolute;
+        transform: rotate(90deg);
+        right: -60px;
+        bottom: 0;
+    }
+    .hero__language--text-hidden{
+        font-size: 34px;
+    }
+    .hero__language--text-active-hidden{
+        font-size: 34px;
+    }
+}
+
+

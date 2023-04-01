@@ -1,0 +1,755 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    color: #7E7F86;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.body{
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.btn{
+    padding: 14px 35px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #8643DC;
+    border-radius: 100px;
+    transition: background 0.3s;
+}
+
+.second-title{
+    font-weight: 700;
+    font-size: 36px;
+    color: #25202F;
+}
+
+.btn:hover{
+    background: #A745F0;
+    transition: 0.4s;
+}
+
+.btn:active{
+    background: #C37FEC;
+}
+
+#particles-js, #particles-js-dark{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#particles-js-dark{
+    position: fixed;
+    z-index: 2;
+}
+
+.enable{
+    display: flex;
+}
+
+.disabled{
+    display: none !important;
+}
+
+#page-wrapper{
+    position: relative;
+    z-index: 3;
+}
+
+.header{
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    left: calc(50%-1200px);
+    padding: 15px 0;
+    transition: background-color .5s;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 1100px;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 56px;
+    height: 56px;
+
+}
+.logo > img{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    margin-left: 51px;
+    
+}
+.navbar__link{
+    color: #7E7F86;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid transparent;
+    transition: 0.1s;
+}
+.navbar__link:first-child{
+    margin-left: 0;
+}
+.navbar__link:hover{
+
+    color: #21232D;
+    border-bottom: 1px solid #A745F0;
+    transition: 0.2s;
+}
+
+.dark-mode{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.dark-mode__text{
+    color: #7E7F86;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid transparent;
+    transition: 0.1s;
+}
+
+input[type="checkbox"]{
+    width: 50px;
+    cursor: pointer;
+    height: 25px;
+    -webkit-appearance: none;
+    border: 1px solid #600AA1;
+    background-color: #fff;
+    outline: none;
+    border-radius: 41px;
+    position: relative;
+    transition: 0.5s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+input:checked[type="checkbox"]{
+    background-color: #600AA1;
+}
+
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    background-color: #8643DC;
+    transition: 0.5s;
+}
+
+input:checked[type="checkbox"]::before{
+    
+    left: 25px;
+}
+
+.hero{
+    margin-top: 100px;
+}
+
+.hero-container{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.up-title{
+    display: block;
+    margin-top: 99px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #666666;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 60px;
+    color: #25202F;
+}
+
+.subtitle{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #25202F;
+}
+
+.contact-btn{
+    margin-top: 50px;
+}
+
+.links{
+    display: flex;  
+    align-items: center;
+    margin-top: 302px;
+}
+
+.facebook, .linkedin, .github{
+    width: 24px;
+    height: 24px;
+    fill: #25202F;
+    margin-left: 45px;
+    cursor: pointer;
+    transition: fill .2s;
+}
+
+.facebook:hover, .linkedin:hover, .github:hover{
+    fill: black;
+    transition: fill .2s;
+}
+
+.facebook{
+    margin-left: 0;
+}
+
+.about{
+    margin-top: 117px;
+    padding-bottom: 112px;
+}
+
+.about-container{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-block{
+    display: flex;
+    width: 100%;
+}
+
+.info{
+    font-weight: 400;
+    font-size: 18px;
+    
+    color: #8643DC;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8643DC;
+}
+
+.about-left, .about-right{
+    margin-top: 12px;
+}
+
+.about-left{
+    width: 387px;
+    min-height: 499px;
+    background: #600AA1;
+    border-radius: 26px;
+}
+
+.about-right{
+    width: 508px;
+    margin-left: 172px;
+}
+
+.about-right__title{
+    margin-top: 32px;
+}
+
+.about-right__text{
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #7E7F86;
+    margin-bottom: 18px;
+}
+
+.statistics-item{
+    display: flex;
+    align-items: center;
+}
+
+.statistics-item__number{
+    font-weight: 700;
+    font-size: 48px;
+    color: #590B9B;
+}
+
+.statistics-item__text{
+    font-weight: 500;
+    font-size: 24px;
+    color: #363538;
+    margin-left: 15px;
+}
+
+.skills{
+    padding-bottom: 102px;
+}
+
+.skills-container{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tehnology-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.tehnology-item{
+    display: flex;
+    width: 226px;
+    /* min-height: 196px; */
+    align-self: stretch;
+    border: 3px solid #A745F0;
+    border-radius: 36px;
+    flex-direction: column;
+    padding: 21px 10px 15px 10px;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.tehnology-item__img{
+    height: 50px;
+}
+
+.tehnology-item__img__title{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #25202F;
+}
+
+.tehnology-item__text{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+}
+
+.portfolio{
+    padding-bottom: 170px;
+}
+
+.portfolio-top{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-top__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #25202F;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.explore-text{
+    margin-right: 13px;
+    
+}
+
+.portfolio-top__text:hover .explore-text{
+    text-decoration: underline;
+}
+
+.portfolio-bot{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.portfolio-item{
+    width: 510px;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    height: 300px;
+    filter: drop-shadow(0px 20px 50px rgba(70, 0, 70, 0.3));
+    /* border-radius: 20px; */
+    background-image: url(./img/chrome_ORYZDRnPle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.portfolio-item:hover .portfolio-item-hidden{
+    top: 0;
+    transition: 0.5s;
+}
+
+.portfolio-item-hidden{
+    background-color: #fff;
+    padding: 55px 65px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: -300px;
+    transition: 0.5s;
+}
+
+.portfolio-item-hidden__title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.portfolio-item-hidden__subtitle{
+    color: #E32F72;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.portfolio-item-hidden__link{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+    color: #000;
+    width: 150px;
+    border: 2px solid #E31B6D;
+    margin: 0 auto;
+    margin-top: 55px;
+    transition: 0.3s;
+}   
+
+.portfolio-item-hidden__link:hover{
+    background-color: #E31B6D;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+.faq{
+    padding: 70px 0;
+    background: #600AA1;
+    transition: .5s;
+}
+
+.faq__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: #FF8A56;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.faq__title{
+    display: block;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 19px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 120px;
+    
+}
+
+.faq-item-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.faq-item{
+    padding-bottom: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(229, 229, 229, 0.3);
+    margin-top: 30px;
+}
+
+.faq-item > img{
+    margin-left: auto;
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.faq__title-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    align-self: flex-start;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.hidden-block{
+    width: 500px;
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+.contact{
+    padding: 118px 0 100px 0;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.contact-top{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: lowercase;
+    color: #8643DC;
+    height: 28px;
+}
+
+.email:hover{
+    text-decoration-line: underline;
+}
+
+.contact-second-title{
+    width: 538px;
+}
+
+.contact-bot{
+    margin-top: 35px;
+    width: 100%;
+}
+
+
+.input{
+    border: none;
+    width: 100%;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #A8A0B0;
+    background-color: transparent;
+    position: relative;
+    margin-top: 45px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #DAD2E3;
+}
+
+.input:focus{
+    color: #000;
+}
+
+form{
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+}
+
+.submit-btn{
+    margin-top: 30px;
+    background: #8643DC;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 18px 49px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #fff;
+    padding: 0 0 22px 0;
+    transition: .5s;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact-second{
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.footer-item-box{
+    margin-top: 25px;
+    width: 273px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-item::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: -17px;
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/figure-small.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-svg{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 3;
+    fill: #fff;
+}
+
+.body-dark{
+    
+    background-color: #121010;
+    transition: 0.5s;
+}
+
+.header-dark{
+    background-color: #1b1818;
+}
+
+.navbar__link-dark{
+    color: #818181;
+}
+
+.navbar__link-dark:hover{
+    color: #fff;
+}
+
+.dark-mode__text-dark{
+    color: #818181;
+}
+
+.title-dark{
+    color: #fff;
+}
+
+.subtitle-dark{
+    color: #666666;
+}
+
+.facebook-dark, .linkedin-dark, .github-dark{
+    fill: #fff;
+}
+
+.facebook-dark:hover, .linkedin-dark:hover, .github-dark:hover{
+    fill: #666666;
+}
+
+.second-title-dark{
+    color: #fff;
+}
+
+.statistics-item__text-dark{
+    color: #fff;
+}
+
+.tehnology-item-dark{
+    background-color: #121010;
+}
+
+.tehnology-item__img__title-dark{
+    color: #fff;
+}
+
+.tehnology-item__text-dark{
+    color: #666666;
+}
+
+.explore-text-dark{
+    color: #fff;
+}
+
+.portfolio-item-hidden-dark{
+    background-color: #1b1818;
+}
+
+.portfolio-item-hidden__title-dark{
+    color: #fff;
+}
+
+.portfolio-item-hidden__link-dark{
+    color: #fff;
+}
+
+.faq-dark{
+    background-color: #540056;
+    transition: .5s;
+}
+
+.contact-dark{
+    background-color: #121010;
+    transition: .5s;
+}
+
+.footer-dark{
+    background-color: #121010;
+    transition: .5s;
+}
